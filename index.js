@@ -32,6 +32,7 @@ const loader = function(source, inputSourceMap) {
 
   const packageName = config['package'] || 'author/project';
   const taggerName =  [
+    '',
     packageName.replace(/-/g, '_').replace(/\//g, '$'),
     config.module.replace(/\./g, '$'),
     config.tagger
